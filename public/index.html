@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="smbshareApp">
+	<head>
+		<meta charset="utf-8">
+		<title>SMB-Share</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+		<link href="/stylesheets/flat-ui-pro.min.css" rel="stylesheet">
+		<link href="/stylesheets/style.css" rel="stylesheet">
+
+		<link rel="shortcut icon" href="/images/favicon.ico">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+					<a class="navbar-brand" href="#">SMB-Share</a>
+				</div>
+
+				<p class="navbar-text navbar-right">Signed in as <strong>AZZY\aaron</strong></p>
+			</div>
+		</div>
+
+		<div class="container" ng-view>
+
+		</div>
+
+		<script src="/javascripts/jquery.min.js"></script>
+		<script src="/javascripts/flat-ui-pro.min.js"></script>
+		<script src="/javascripts/angular.min.js"></script>
+		<script src="/javascripts/angular-route.min.js"></script>
+		<script src="/javascripts/app/app.js"></script>
+		<script src="/javascripts/app/controllers/authentication.js"></script>
+		<script src="/javascripts/app/controllers/browse.js"></script>
+	</body>
+</html>
